@@ -1,7 +1,7 @@
 name: Problem report
 description: Something failed, crashed or gave a wrong result.
 title: "[Problem] "
-labels: ["beta", "bug"]
+labels: ["beta", "bug", "needs-triage"]
 body:
   - type: markdown
     attributes:

@@ -1,7 +1,7 @@
 name: Beta feedback
 description: Tell us how your first runs went, what was confusing, and what you would pay for.
 title: "[Beta feedback] "
-labels: ["beta", "feedback"]
+labels: ["beta", "feedback", "needs-triage"]
 body:
   - type: markdown
     attributes:
