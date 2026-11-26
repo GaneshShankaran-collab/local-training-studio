@@ -1,0 +1,42 @@
+name: Problem report
+description: Something failed, crashed or gave a wrong result.
+title: "[Problem] "
+labels: ["beta", "bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please attach the file from Help > Save diagnostics. It has versions, your GPU and recent logs,
+        and no datasets, examples, prompts, answers or models. Do not paste private data here.
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Where did it happen?
+      options:
+        - Installing
+        - Opening Studio
+        - Choosing or importing data
+        - Getting model weights
+        - Training
+        - Checking the base model / comparing
+        - Use in Ollama
+        - Updating
+        - Somewhere else
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What did you do, and what happened?
+      description: The exact message Studio showed helps most.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU and Windows version
+      placeholder: e.g. RTX 3060 12 GB, Windows 10 22H2
