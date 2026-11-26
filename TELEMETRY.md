@@ -30,6 +30,7 @@ What each event can contain:
 | `use_checked` | Check the connection | (none) |
 | `shared` | A result card was made | (none) |
 | `crash` | An unexpected error | kind (the error type, for example `ValueError`) |
+| `rated` | 👍 or 👎 on "Was this useful?" | score (1 or 0), where (score, try, use) |
 | `step_viewed` | A step was opened | step |
 | `destination_viewed` | A Use it destination was opened | destination |
 
