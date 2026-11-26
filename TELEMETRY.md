@@ -36,3 +36,13 @@ What each event can contain:
 
 Every event also carries: Studio's version, the Windows version, and a GPU size class such as
 "up to 16 GB".
+
+### Private feedback (Help → Send Feedback)
+
+This is separate from the usage statistics above, and nothing is sent until you press
+**Send Privately**. It sends your answers to the feedback questions (how useful Studio was, what
+you would pay for and how much, whether your team would use it, your real task, what was
+confusing, and a way to reach you if you give one), together with Studio's version, the Windows
+version, the GPU size class, the random install ID and the minutes to your first result. It goes
+to the same private service the Studio team uses for usage statistics, never to a public page.
+Please leave out private or customer data. Problem reports on GitHub, by contrast, are public.

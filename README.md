@@ -40,8 +40,9 @@ ZIP over your install folder and run the installer again.
 
 ## Beta testers
 
-Start with [BETA.md](BETA.md). Send feedback and report problems from Studio's **Help** menu, or
-open an issue here with the **Beta feedback** or **Problem report** form.
+Start with [BETA.md](BETA.md). Send feedback privately from Studio's **Help → Send Feedback**.
+Issues here are **public**: report problems with the **Problem report** or **Beta feedback** form,
+and leave out private data.
 
 ## Privacy
 

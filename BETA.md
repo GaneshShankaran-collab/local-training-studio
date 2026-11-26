@@ -62,8 +62,11 @@ confirms it works.
 
 ## 7. Tell us how it went
 
-- **Feedback:** **Help → Send feedback** opens a short form (about 5 minutes). Two questions
-  matter most to us: how disappointed you would be without Studio, and what you would pay for.
+- **Feedback:** **Help → Send Feedback** asks a few questions inside Studio (about 3 minutes), and
+  your answers go privately to the Studio team. Two questions matter most to us: how disappointed
+  you would be without Studio, and what you would pay for. Until private feedback is switched on
+  in an update, Studio offers the public GitHub form instead; that page is public, so leave out
+  prices and private data there.
 - **Problems:** **Help → Save diagnostics** creates a ZIP with Studio's version, your GPU and
   driver, and recent logs, and opens its folder. It contains no datasets, examples, prompts,
   answers or models. Attach it to a problem report.
