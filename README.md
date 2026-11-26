@@ -21,8 +21,11 @@ This repository holds Studio's **releases and documentation**. Download the app 
 of free disk space. Optional: [Ollama](https://ollama.com), to use your model in other apps.
 Mac and AMD GPUs are not supported yet.
 
-**Update:** Studio checks for new versions and offers them from its header. You can also extract a
-newer ZIP over your install folder and run the installer again; your models and runs are kept.
+**Update:** from 0.9.5 on, Studio checks for new versions when it opens and every hour, shows them
+in a banner, and installs them by itself as it opens (Help → Software Update to turn that off).
+**Update Now** installs and restarts straight away. Your models, runs and data are always kept.
+Older versions are marked *Deprecated* on the releases page. To update by hand, extract a newer
+ZIP over your install folder and run the installer again.
 
 ## What you can do
 
