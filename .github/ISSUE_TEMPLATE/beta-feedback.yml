@@ -1,13 +1,16 @@
 name: Beta feedback
-description: Tell us how your first runs went, what was confusing, and what you would pay for.
+description: Tell us how your first runs went and what was confusing. This page is public.
 title: "[Beta feedback] "
 labels: ["beta", "feedback", "needs-triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for testing Local Training Studio. Please do not paste private examples, customer
-        data or model answers that contain them. Times are in Help > Save diagnostics (about.json,
+        Thanks for testing Local Training Studio. **This page is public.** Please do not paste
+        private examples, customer data or model answers that contain them.
+
+        Questions about value, pricing and your team are asked privately in Studio instead:
+        **Help → Send Feedback**. Those answers go only to the Studio team. Times are in Help > Save diagnostics (about.json,
         "first_run_minutes") if you want to attach that file.
   - type: dropdown
     id: task
@@ -41,52 +44,6 @@ body:
     id: confusing
     attributes:
       label: What was confusing or slow?
-  - type: textarea
-    id: task-detail
-    attributes:
-      label: What real task would you use this for? (No private data, please.)
-  - type: dropdown
-    id: value
-    attributes:
-      label: How disappointed would you be if you could no longer use Studio?
-      options:
-        - Very disappointed
-        - Somewhat disappointed
-        - Not disappointed
-    validations:
-      required: true
-  - type: checkboxes
-    id: would-pay
-    attributes:
-      label: Which of these would you pay for? (Ideas we are considering, not built yet.)
-      options:
-        - label: "Big-model quality from a small, fast model (Studio distills a large model into a small one for your task)"
-        - label: "Automatic best settings, with a guarantee the trained model is never worse than the original"
-        - label: "The model keeps improving from the answers you correct"
-        - label: "Team features: shared datasets and models, review before a model is used, single sign-on"
-        - label: "Train on rented cloud GPUs when my own GPU is too small"
-        - label: "Priority support and help with my use case"
-  - type: dropdown
-    id: price
-    attributes:
-      label: For the features you ticked, what would you pay per month?
-      options:
-        - "Nothing, I would only use the free version"
-        - "Under $10"
-        - "$10 to $25"
-        - "$25 to $50"
-        - "More than $50"
-        - "My company would pay (per person or per team)"
-    validations:
-      required: true
-  - type: dropdown
-    id: team
-    attributes:
-      label: Would your team or company want to use Studio?
-      options:
-        - "Yes, and I could introduce you to the person who decides"
-        - "Maybe, if it had team features"
-        - "No, this is just for me"
   - type: input
     id: gpu
     attributes:
