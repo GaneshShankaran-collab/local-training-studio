@@ -17,9 +17,14 @@ This repository holds Studio's **releases and documentation**. Download the app 
    anyway** (beta builds are not code-signed yet).
 3. Studio opens in its own window with three areas: **Chat**, **Models** and **Train**.
 
-**Needs:** Windows 10 or 11, an NVIDIA RTX GPU with 6 GB or more, a current driver, and about 20 GB
-of free disk space. Optional: [Ollama](https://ollama.com), to use your model in other apps.
-Mac and AMD GPUs are not supported yet.
+**Linux and macOS:** extract the ZIP and run `bash install.sh`. Then open Studio with `./studio-app`
+(Linux also gets an applications-menu entry; on a Mac, double-click `Local Training Studio.command`).
+Use it from a terminal with `./studio --help`.
+
+**Needs:** Windows 10 or 11, Linux (Ubuntu 22.04 or newer tested) or macOS, and Python 3.10+ on Linux
+and macOS. Chat, Models, documents, pictures and tools work on any recent PC or Mac; Studio's engine
+uses CUDA, Vulkan (any GPU), Apple Metal or the CPU. Training needs an NVIDIA GPU with 6 GB or more, on
+Windows or Linux; training on a Mac is not available yet.
 
 **Update:** from 0.9.5 on, Studio checks for new versions when it opens and every hour, shows them
 in a banner, and installs them by itself as it opens (Help → Software Update to turn that off).
@@ -36,7 +41,11 @@ ZIP over your install folder and run the installer again.
 - **Ask your documents:** attach PDFs, Word files and code; answers cite the file and page.
 - **Pictures:** show pictures to models that can see, such as Gemma 3.
 - **Models:** see what is installed and in memory and how each fits your GPU; download hand-picked
-  models or any GGUF model from Hugging Face. Studio installs and starts Ollama for you.
+  models or any GGUF model from Hugging Face.
+- **Studio's own engine** (llama.cpp): runs your model files directly, including models Ollama already
+  downloaded, on Windows, Linux and macOS. Ollama is optional.
+- **Tools:** models can use a clock, an exact calculator, Studio's video tool and any MCP server; anything
+  that acts asks you first. JSON and schema answers, presets, and a command line (`studio`).
 
 **Train your own model**
 
