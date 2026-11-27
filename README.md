@@ -1,8 +1,8 @@
 # Local Training Studio
 
-**Teach a local AI model your task on your own PC, see proof that it got better, and use it
-anywhere: Ollama, the GitHub Copilot app, VS Code, or your own app.** No code, no cloud: your
-examples never leave your machine.
+**Run, compare and teach local AI models on your own PC: chat with any model, ask your documents,
+train a model on your task with proof that it got better, train video styles, and use it all in the
+GitHub Copilot app, VS Code or your own app.** No code, no cloud: your data never leaves your machine.
 
 This repository holds Studio's **releases and documentation**. Download the app from
 [Releases](https://github.com/GaneshShankaran-collab/local-training-studio/releases/latest).
@@ -15,7 +15,7 @@ This repository holds Studio's **releases and documentation**. Download the app 
 2. Double-click **Install Local Training Studio.cmd**. The first install downloads about 3.2 GB and
    takes 10–20 minutes. If Windows shows "Windows protected your PC", click **More info → Run
    anyway** (beta builds are not code-signed yet).
-3. Studio opens in its own window and walks you through four steps: **Data → Model → Train → Test**.
+3. Studio opens in its own window with three areas: **Chat**, **Models** and **Train**.
 
 **Needs:** Windows 10 or 11, an NVIDIA RTX GPU with 6 GB or more, a current driver, and about 20 GB
 of free disk space. Optional: [Ollama](https://ollama.com), to use your model in other apps.
@@ -29,6 +29,17 @@ ZIP over your install folder and run the installer again.
 
 ## What you can do
 
+**Chat and Models**
+
+- **Chat** with any local model, with streaming answers, code blocks, speed per answer, Regenerate,
+  Edit and Export. **Compare** two models side by side on the same messages.
+- **Ask your documents:** attach PDFs, Word files and code; answers cite the file and page.
+- **Pictures:** show pictures to models that can see, such as Gemma 3.
+- **Models:** see what is installed and in memory and how each fits your GPU; download hand-picked
+  models or any GGUF model from Hugging Face. Studio installs and starts Ollama for you.
+
+**Train your own model**
+
 - **Data:** start from free datasets that allow commercial use, your own CSV or Excel file, or a
   5-minute demo. Studio checks the data and can draft more examples in your style.
 - **Model:** Studio picks the strongest model that fits your graphics card.
@@ -37,6 +48,13 @@ ZIP over your install folder and run the installer again.
   before-and-after score on examples the model never saw.
 - **Use it:** add it to Ollama, then follow the steps for a terminal, the GitHub Copilot app,
   VS Code, or your own app, and check the connection.
+
+**Train a video style (Wan 2.1)**
+
+- Give Studio a folder of short clips with captions; it trains a video LoRA on your GPU, shows
+  before-and-after videos, and adds a **make_video** tool to the GitHub Copilot app so you can ask
+  for videos in your style. Video needs about 16 GB of free graphics memory and a one-time
+  download of about 19 GB.
 
 ## Beta testers
 
