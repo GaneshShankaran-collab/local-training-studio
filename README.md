@@ -43,7 +43,10 @@ ZIP over your install folder and run the installer again.
 - **Models:** see what is installed and in memory and how each fits your GPU; download hand-picked
   models or any GGUF model from Hugging Face.
 - **Studio's own engine** (llama.cpp): runs your model files directly, including models Ollama already
-  downloaded, on Windows, Linux and macOS. Ollama is optional.
+  downloaded, on Windows, Linux and macOS, plus large models split into several files. Ollama is optional.
+- **Apple MLX on Macs:** install Apple's own engine from inside Studio and download MLX models from
+  Hugging Face.
+- **Tested on every change** on clean Windows, Linux and macOS machines, with real model answers.
 - **Tools:** models can use a clock, an exact calculator, Studio's video tool and any MCP server; anything
   that acts asks you first. JSON and schema answers, presets, and a command line (`studio`).
 
